@@ -47,3 +47,7 @@ function fontId(font, id){
 
 fontId('35px', document.getElementById('thing-c'))
 fontId('10px', document.getElementById('thing-1'))
+
+function txt (txt1,txt2) {
+    
+}
