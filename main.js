@@ -8,7 +8,7 @@ setImgWithId('#image-2', 'https://media3.giphy.com/media/3ohhwtfOtCraTNUTYI/giph
 setImgWithId('#image-3', 'https://media2.giphy.com/media/11Tsyjflf2xq2A/200.webp?cid=790b7611571c847350f2ff91f553ff4c8df96da3f0fcfd45&rid=200.webp');
 
 function lineThruText () {
-    const thruText = document.querySelector('li:first-child');
+    const thruText = document.querySelector('ul li:first-child');
     thruText.style.textDecoration = 'line-through';
 }
 lineThruText();
@@ -16,7 +16,7 @@ lineThruText();
 function removeListItem () {
     const remItem = document.getElementById('arguments');
     const listItem = remItem.getElementsByTagName('li')
-
+//const lastLi = document.querySelector('ul>li:lastchild')
     let last = listItem[listItem.length - 1];
     remItem.removeChild(last);
 }
@@ -28,7 +28,7 @@ function appendNewArgument (element) {
     const newElement = document.getElementById('arguments');
     newElement.appendChild(element);
 }
-const newImg = document.createElement('img');
+const newImg = document.createElement('https://media2.giphy.com/media/11Tsyjflf2xq2A/200.webp?cid=790b7611571c847350f2ff91f553ff4c8df96da3f0fcfd45&rid=200.webp');
 appendNewArgument(newImg);
 
 function height30 (image) {
@@ -37,6 +37,7 @@ function height30 (image) {
 
 function invisible (element) {
     element.classList.add("invisible");
+    //element.classname = 'invisible';
 }
 
 invisible(document.getElementById('thing-2'));
@@ -49,5 +50,5 @@ fontId('35px', document.getElementById('thing-c'))
 fontId('10px', document.getElementById('thing-1'))
 
 function txt (txt1,txt2) {
-    
+
 }
