@@ -14,5 +14,15 @@ lineThruText();
 
 function removeListItem () {
     const remItem = document.getElementById('arguments');
-    remItem.lastChild(remItem.childnodes[3]);
+    remItem.lastChild(remItem.arguments[3]);
+}
+removeListItem();
+removeListItem();
+
+function appendNewArgument (element) {
+    const newElement = document.querySelector('ul');
+    newElement.appendChild(element);
+}
+function appendNewImg () {
+    const newImg = document.createElement('img');
 }
