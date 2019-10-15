@@ -42,13 +42,26 @@ function invisible (element) {
 
 invisible(document.getElementById('thing-2'));
 
-function fontId(font, id){
+function fontId(font, id) {
     id.style.fontSize = font;
 }
 
 fontId('35px', document.getElementById('thing-c'))
 fontId('10px', document.getElementById('thing-1'))
 
-function txt (txt1,txt2) {
+function txt (txt1,) {
+    const newTxt = document.createElement('li');
+    newTxt.innerText = txt1
+
+    return newTxt
+}
+const newTxt = txt('jon')
+appendNewArgument(newTxt);
+
+
+function makeHeader(text,size) {
+    const head = document.createElement('h' + size.tostring());
+    head.innerText = text;
+    return head;
 
 }
