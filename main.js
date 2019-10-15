@@ -13,5 +13,6 @@ function lineThruText () {
 lineThruText();
 
 function removeListItem () {
-    const remItem = document.querySelector('li')
+    const remItem = document.getElementById('arguments');
+    remItem.lastChild(remItem.childnodes[3]);
 }
